@@ -1,2 +1,2 @@
-# project_grp2
+# 自作AIスピーカーYoSiE
 卒業制作用リポジトリ
