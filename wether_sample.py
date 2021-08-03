@@ -1,5 +1,5 @@
-$ chmod +x ~/script/get_yahoo_weather.py
-$ cat ~/script/get_yahoo_weather.py
+#$ chmod +x ~/script/get_yahoo_weather.py
+#$ cat ~/script/get_yahoo_weather.py
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
  
@@ -86,6 +86,7 @@ if flg != "10":
  
 if flg == "1" or flg == "2" or flg == "3":
    phrase += weather + 'です。' + " " + '最高気温は、' + high + "度" + " " + '最低気温は、' + low + '度、' + '降水確率は、' + precip + 'です。'
+  #phraseをOpenJTalkで喋らせる
 elif flg == "4" or flg == "5" or flg == "6":
    phrase += '最高気温' + " " + high + "度" + " " + '最低気温' + " " + low + '度です。'
 elif flg == "7" or flg == "8" or flg == "9":
@@ -95,4 +96,4 @@ else:
  
 if flg != "10":
   print(phrase)
-$
+#$
