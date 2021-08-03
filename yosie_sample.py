@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import sys
+import datetime
 
 def yosie_action(func):
 	if func == "天気":
@@ -21,10 +22,19 @@ def yosie_action(func):
 		print(phrase)
 	elif func == "ニュース":
 		print("news")
+	elif func == "日時":
+		dt_now = datetime.datetime.now()
+		
+		month = str(dt_now.month)
+		day = str(dt_now.day)
+		hour = str(dt_now.hour)
+		minute = str(dt_now.minute)
+		date = '現在の日時は、' + month + '月' + day + '日' + hour + '時' + minute + '分です'
+		print(date)
 	else:
 		print("error")
 
-func = input("関数を指定してください(天気 or ニュース)：")
+func = input("関数を指定してください(天気 or ニュース or 日時)：")
 yosie_action(func)
 
 
