@@ -20,8 +20,10 @@ def yosie_action(func):
 
 		phrase = anounce + " " + place + " " + target + 'は、' + weather + 'です。' + " " + '最高気温は、' + high + "度" + " " + '最低気温は、' + low + '度、' + '降水確率は、' + precip + 'です。'
 		print(phrase)
+		
 	elif func == "ニュース":
 		print("news")
+
 	elif func == "日時":
 		dt_now = datetime.datetime.now()
 		
