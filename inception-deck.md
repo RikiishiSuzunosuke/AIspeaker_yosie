@@ -47,10 +47,9 @@
 
 - [Python]
 - [Raspberry Pi]
-- []
-- []
-- []
-- []
+- [OpenJTalk]
+- [beautifulsoup4]
+- [※ Julius]
 
 <div style="page-break-before:always">
 </div>
