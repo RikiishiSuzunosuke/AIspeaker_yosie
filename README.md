@@ -18,6 +18,7 @@
 質問に応じた関数(機能)を返す<br>
 ・暫定で決まっている機能<br>
 　・カメラで写真撮影<br>
-　・ニュース読み上げ<br>
+　・ニュース読み上げ [参考サイト](https://rurukblog.com/post/python-webscraping-ynews/)<br>
 　・天気予報読み上げ [参考サイト](https://www.webzoit.net/hp/it/internet/homepage/env/iot/raspberry_pi/smart_speaker/weather/)<br>
 　・日付/時刻読み上げ<br>
+　・本日の星座占い(自作コード)
