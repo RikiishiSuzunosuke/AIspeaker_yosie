@@ -32,3 +32,18 @@ OpenJTalk<br>
 　・天気予報読み上げ [参考サイト](https://www.webzoit.net/hp/it/internet/homepage/env/iot/raspberry_pi/smart_speaker/weather/)<br>
 　・日付/時刻読み上げ<br>
 　・本日の星座占い(自作コード)
+ 
+## 使用する技術
+### 音声認識
++ Julius
+### AI
++ MeCab(形態素解析)
++ tensorflow(機械学習)
+### スクレイピング
++ BeautifulSoup4
+### 合成音声
++ OpenJTalk
+### 音声入力
++ マイク
+### 音声出力
++ スピーカー
