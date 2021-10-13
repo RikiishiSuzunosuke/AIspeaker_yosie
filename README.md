@@ -47,3 +47,4 @@ OpenJTalk<br>
 + 全指向性マイク
 ### 音声出力
 + スピーカー
+![外見案](https://user-images.githubusercontent.com/84367300/137059780-6375c5bd-a04a-4c02-830e-173781ab133f.png)
