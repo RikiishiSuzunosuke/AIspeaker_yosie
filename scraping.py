@@ -38,15 +38,12 @@ def yosie_action(func):
 
 		summary = requests.get(headline_link)
 		summary_soup = BeautifulSoup(summary.text, "html.parser")
-
-		summary_soup_a = summary_soup.select("a:contains('続きを読む')")[0]
-
-		news_body_link = summary_soup_a.attrs["href"]
-
-		news_body = requests.get(news_body_link)
-		news_soup = BeautifulSoup(news_body.text, "html.parser")
-		text = news_soup.title.text
-
+		#ニュースタイトル
+		text = summary_soup.title.text 
+		datail_text = summary_soup.find('p', class_="highLightSearchTarget")
+		#要約記事
+		text = text + datail_text.text
+		text.strip()
 		result = text
 
 	elif func == "日時":
