@@ -1,26 +1,9 @@
 # 自作AIスピーカーYoSiE
 卒業制作用リポジトリ
+## システムの流れ
 
-## YoSiEのデータの流れについて
-ユーザ<br>
-↓音声<br>
-マイク<br>
-↓音声データ<br>
-音声認識<br>
-↓テキストデータ<br>
-AI<br>
-1.MeCab→形態素解析<br>
-2.tensorflow→機械学習<br>
-クラス分類<br>
-↓分類結果<br>
-機能呼び出し<br>
-テキストデータ取得<br>
-↓テキストデータ<br>
-OpenJTalk<br>
-↓音声データ<br>
-スピーカー<br>
-↓音声<br>
-ユーザ<br>
+![image](https://user-images.githubusercontent.com/84367202/138005932-7bfbf8a7-f4c6-4913-8cd4-85a2595cedf1.png)
+
 
 ## YoSiEの機能について
 音声を認識<br>
