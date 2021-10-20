@@ -34,3 +34,5 @@
 ### イメージ図
 
 ![外見案](https://user-images.githubusercontent.com/84367300/137059780-6375c5bd-a04a-4c02-830e-173781ab133f.png)
+
+## [ガントチャート](https://brabioproject.appspot.com/project/ganttchart/ahJzfmJyYWJpb3Byb2plY3RocmRyEQsSB1Byb2plY3QY47LTxzUM/)
