@@ -1,5 +1,6 @@
 # 自作AIスピーカーYoSiE
 卒業制作用リポジトリ
+[このプロジェクトのガントチャート](https://brabioproject.appspot.com/project/ganttchart/ahJzfmJyYWJpb3Byb2plY3RocmRyEQsSB1Byb2plY3QY47LTxzUM/)<br>
 
 ## YoSiEの振る舞いについて
 起動(ACアダプタ)<br>
