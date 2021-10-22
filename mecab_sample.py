@@ -1,6 +1,10 @@
 import MeCab
 
+<<<<<<< HEAD
 tagger = MeCab.Tagger("-Owakati")
+=======
+tagger = MeCab.Tagger("")
+>>>>>>> ad59d242449a05a733c018e8f0705bd7c9f03a90
 str = input("input:")
 node = tagger.parseToNode(str)
 
