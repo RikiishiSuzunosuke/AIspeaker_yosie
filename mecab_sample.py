@@ -1,6 +1,6 @@
 import MeCab
 
-tagger = MeCab.Tagger("-Ochasen")
+tagger = MeCab.Tagger("")
 str = input("input:")
 node = tagger.parseToNode(str)
 
