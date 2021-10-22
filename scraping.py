@@ -6,8 +6,9 @@ import re
 import random
 
 def yosie_action(func):
-	result = ""
-	if func == "天気":
+	result = "" #result変数を初期化
+
+	if func == "0": #天気
 		#Yahoo天気予報のURLを取得
 		URL = "https://weather.yahoo.co.jp/weather/jp/14/"
 		target = "今日の天気"
@@ -29,7 +30,7 @@ def yosie_action(func):
 		#resultに出力テキストを入力
 		result = phrase
 		
-	elif func == "ニュース":
+	elif func == "1": #ニュース
 		#YahooトップページのURLを取得
 		URL = "https://www.yahoo.co.jp/"
 
@@ -47,7 +48,7 @@ def yosie_action(func):
 		summary = requests.get(headline_link)
 		summary_soup = BeautifulSoup(summary.text, "html.parser")
 		#ニュースタイトルを取得、textに代入
-		text = summary_soup.title.text 
+		text = summary_soup.title.text + " "
 		#class名がhighLightSearchTargetのpタグから要約記事を取得
 		datail_text = summary_soup.find('p', class_="highLightSearchTarget")
 		#要約記事をtextに追記
@@ -58,7 +59,7 @@ def yosie_action(func):
 		#resultに出力テキストを入力
 		result = text
 
-	elif func == "日時":
+	elif func == "2": #日時
 		#現在の日時を取得
 		dt_now = datetime.datetime.now()
 		
@@ -72,7 +73,7 @@ def yosie_action(func):
 		#resultに出力テキストを入力
 		result = date
 
-	elif func == "占い":
+	elif func == "3": #全体占い
 		#Yahoo星座占いのURLを取得
 		url = 'https://fortune.yahoo.co.jp/12astro/ranking.html'
 		rest = requests.get(url)
@@ -101,7 +102,7 @@ def yosie_action(func):
 
 		result = text
 
-	elif func == "占い2":
+	elif func == "4": #個別占い
 		myseiza = input("あなたの星座を入力してください(ひらがな+座)：")
 		seiza_list = ["おとめ座","かに座","やぎ座","おひつじ座","さそり座","おうし座","うお座","いて座","てんびん座","しし座","みずがめ座","ふたご座",]
 		#入力されたデータとseiza_listを見比べて、starsに代入
@@ -138,15 +139,15 @@ def yosie_action(func):
 			text = text + "以上、"+stars+"の占いでした。" + " "
 			result = text
 		else:
-			result = "error"
+			result = "指定された星座が見つかりませんでした"
 
 	else:
-		result = "error"
+		result = "入力エラーです"
 
 	#テキストファイルにresultを上書き保存する
 	f = open('./result.txt', 'w')
 	f.write(result)
 	f.close()
 
-func = input("関数を指定してください(天気 or ニュース or 日時 or 占い or 占い2)：")
+func = input("機能を数字で指定(0.天気, 1.ニュース, 2.日時, 3.全体占い, 4.個別占い)：")
 yosie_action(func)
