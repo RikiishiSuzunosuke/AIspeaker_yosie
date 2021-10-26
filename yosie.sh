@@ -1,3 +1,7 @@
 #!/bin/bash
-python3 scraping.py
-./jtalk.sh
+cd ~/AIspeaker_yosie
+while :
+do
+	python3 scraping.py
+	./jtalk.sh
+done
