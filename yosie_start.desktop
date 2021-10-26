@@ -1,0 +1,7 @@
+#.config/autostart/yosie_start.desktop
+
+[Desktop Entry]
+Exec=lxterminal -e /home/pi/AIspeaker_yosie/yosie.sh
+Type=Application
+Name=yosie_start
+Terminal=true
