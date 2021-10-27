@@ -9,7 +9,6 @@ args = sys.argv
 
 def yosie_action(func):
 	result = "" #result変数を初期化
-	print(func)
 
 	if func == "0": #天気
 		#Yahoo天気予報のURLを取得
@@ -151,8 +150,6 @@ def yosie_action(func):
 	f = open('./result.txt', 'w')
 	f.write(result)
 	f.close()
-
-	print(result)
 
 #func = input("機能を数字で指定(0.天気, 1.ニュース, 2.日時, 3.全体占い, 4.個別占い)：")
 #yosie_action(func)
