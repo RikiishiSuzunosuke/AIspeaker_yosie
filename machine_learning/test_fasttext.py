@@ -5,9 +5,9 @@ model = ft.train_supervised('train_data.txt', label_prefix = '__label__',  dim =
 #minCount = 2 登場回数が２回未満の単語を無視するオプション
 model.save_model('model.bin')
 
-print(model.predict('天気を教えて'))
+print(model.predict('ニュースを教えて'))
 
-#results = model.test('test_data_label_2.txt')
-#print(results)
+results = model.test('test_data_label_2.txt')
+print(results)
 #テストデータとlabelの一致の割合が見える
 
