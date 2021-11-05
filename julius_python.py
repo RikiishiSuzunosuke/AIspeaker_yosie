@@ -40,15 +40,15 @@ class Julius:
                 # 話した言葉毎に、print文を実行
                 if fin_flag == True:
                     if '天気' in strTemp:
-                        return("0")
+                        print("0")
                     elif 'ニュース' in strTemp:
-                        return("1")
+                        print("1")
                     elif '日時' in strTemp:
-                        return("2")
+                        print("2")
                     elif '占い' in strTemp:
-                        return("3")
-                    #else:
-                    #   print("話した言葉：" + strTemp)
+                        print("3")
+                    else:
+                        print("話した言葉：" + strTemp)
                     
                     fin_flag = False
                     strTemp = ""
@@ -56,5 +56,5 @@ class Julius:
 
 if __name__ == "__main__":
 
-    julius = Julius()
-    print(julius.run())
+        julius = Julius()
+        julius.run()
