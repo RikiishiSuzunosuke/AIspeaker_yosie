@@ -1,0 +1,27 @@
+__label__2  今日 は 何 日 
+__label__2  日付 を 確認 し たい 
+__label__2  今日 は 何 の 日 
+__label__2  今 何 月 
+__label__2  今 何 日 
+__label__2  今 いつ 
+__label__2  何 日 
+__label__2  今 の 時間 は 
+__label__2  日時 の 確認 を し て くれ 
+__label__2  今 の 時間 は 
+__label__2  今 何時 何 分 
+__label__2  今 何時 
+__label__2  今 何分 
+__label__2  何 時 
+__label__2  何 分 
+__label__2  何 時 、 今 
+__label__2  今 の 時間 は 
+__label__2  時間 、 何 分 、 何時 
+__label__2  今 の 時間 
+__label__2  時間 
+__label__2  日付 、 日時 、 今 何 日 
+__label__2  現在 
+__label__2  現在 の 時間 は 
+__label__2  現在 の 時刻 は 
+__label__2  現在 の 時刻 を 教え て 
+__label__2  現在 の 時間 を 教え て 
+__label__2  現在 の 時間 
