@@ -26,25 +26,3 @@ while True:
 		print('error')
 #ファイルをclose
 f.close()
-
-#labelのカウントを読み込み、リストに格納
-f = open('count.txt', 'r')
-for i in range(4):
-	count = f.readline()
-	func_list[i] = int(count)
-f.close()
-
-#今回追加したlabelの各個数を合算
-for i in range(4):
-	func_list[i] += count_label.count(str(i))
-
-#合算したlabelの個数を上書き保存
-f = open('count.txt','w')
-for i in range(4):
-	f.write(str(func_list[i]) + '\n')
-f.close()
-
-print('天気：' + str(func_list[0]))
-print('ニュース：' + str(func_list[1]))
-print('日時：' + str(func_list[2]))
-print('占い：' + str(func_list[3]))
