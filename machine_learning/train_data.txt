@@ -88,7 +88,6 @@ __label__3  運勢 は
 __label__3  ラッキー だ と 思う ？ 
 __label__3  今日 は ラッキー か な ？ 
 __label__3  今日 は 運 が いい か な 
-
 __label__3  さそり 座順 位 
 __label__3  かに座 順位 
 __label__3  双子 座順 位 
@@ -102,23 +101,19 @@ __label__3  獅子 座順 位
 __label__3  牡牛 座順 位 
 __label__3  天秤 座順 位 
 __label__3  おひつじ 座順 位 
-
 __label__3  占い の 結果 運勢 結果 順位 
-
 __label__2  現在 
 __label__2  現在 の 時間 は 
 __label__2  現在 の 時刻 は 
 __label__2  現在 の 時刻 を 教え て 
 __label__2  現在 の 時間 を 教え て 
 __label__2  現在 の 時間 
- 
 __label__2  朝 の 時間 
 __label__2  昼 の 時間 
 __label__2  夜 に 時間 
 __label__2  何 月 
 __label__2  モーニング 
 __label__2  週 
-__label__2  
 __label__2  月 
 __label__2  箇月 
 __label__2  箇年 
@@ -131,9 +126,89 @@ __label__2  出発 時刻
 __label__2  短期 
 __label__2  季節 
 __label__2  年 
- 
 __label__2  タイム リミット 
 __label__2  近年 
 __label__2  シーズン 
 __label__2  勉強 時間 
 __label__2  先日 
+__label__0  空 
+__label__0  天気 が 怪しい 
+__label__0  雨空 
+__label__0  高 気圧 
+__label__0  一 点 の 雲 も ない 
+__label__0  霧 が 晴れる 
+__label__0  断雲 
+__label__0  直射 日光 
+__label__0  大気 現象 
+__label__0  晴れ晴れ し て いる 
+__label__0  日本 晴れ 
+__label__0  大気 の 状態 
+__label__0  ウエザー 
+__label__0  冬 日和 
+__label__0  サバンナ 気候 
+__label__0  気象 状況 
+__label__0  気象 条件 
+__label__0  気圧 配置 
+__label__0  朗 天 
+__label__0  内陸 性 気候 
+__label__0  雲行 
+__label__0  酷暑 
+__label__0  極暑 
+__label__0  亜 熱帯 
+__label__0  木 を 散らす 暴力 的 な 風 
+__label__0  暴風雪 
+__label__0  風 の 咆哮 ほうこう 
+__label__0  天気 予報 の 傘 マーク 
+__label__0  足元 の 悪い 中 
+__label__2  日延べ 
+__label__3  占星 術 
+__label__3  星占い 
+__label__3  運試し を する 
+__label__3  当たる も 八卦 当たら ぬ も 八卦 
+__label__3  吉凶 運勢 を 占う 
+__label__3  お みくじ を 引く 
+__label__3  星 の 集まり 
+__label__3  プラネタリウム 
+__label__3  吉凶 占い 
+__label__3  天命 
+__label__3  見通し 
+__label__3  悪い 星 の もと に 生まれる 
+__label__3  運試し を する 
+__label__1  連絡 
+__label__1  通報 
+__label__1  通知 
+__label__1  特報 
+__label__1  社会 面 の 記事 
+__label__1  報道 機関 
+__label__1  他人 の 悲劇 を 売り物 に する 
+__label__1  マス ・ コミュニケーション 
+__label__1  CM 
+__label__1  プロパガンダ 
+__label__1  スクープ 
+__label__1  現代 を 記録 する 
+__label__1  スポット ニュース 
+__label__1  ローカル ・ ニュース 
+__label__1  トップ 記事 
+__label__1  大量 伝達 
+__label__1  報知 
+__label__1  虫 の 知らせ 
+__label__1  実用 情報 
+__label__1  話題 性 ニュース 
+__label__1  ネット ニュース 
+__label__1  現地 報告 
+__label__1  新聞 記事 
+__label__1  ニュース リリース 
+__label__2  時日 
+__label__3  巡り合わせ 
+__label__3  星 占い術 
+__label__3  星団 
+__label__3  将来 を 展望 する 
+__label__3  推し量る 
+__label__3  天 の 配剤 
+__label__3  うらない 
+__label__3  恋愛 運 
+__label__3  武運 
+__label__3  財運 
+__label__3  開運 
+__label__3  家運 
+__label__1 ニュースを教えて
