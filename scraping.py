@@ -70,8 +70,9 @@ def yosie_action(func):
 		day = str(dt_now.day)
 		hour = str(dt_now.hour)
 		minute = str(dt_now.minute)
+		second = str(dt_now.second)
 		#要素を文章に取り入れる
-		date = '現在の日時は、' + month + '月' + day + '日' + hour + '時' + minute + '分です'
+		date = '現在の日時は、' + month + '月' + day + '日' + hour + '時' + minute + '分' + second + '秒です'
 		#resultに出力テキストを入力
 		result = date
 
@@ -143,6 +144,9 @@ def yosie_action(func):
 		else:
 			result = "指定された星座が見つかりませんでした"
 
+	elif func == "99":
+		retult = ""
+
 	else:
 		result = "入力エラーです"
 
@@ -154,4 +158,4 @@ def yosie_action(func):
 #func = input("機能を数字で指定(0.天気, 1.ニュース, 2.日時, 3.全体占い, 4.個別占い)：")
 #yosie_action(func)
 
-yosie_action(str(args[1]))
+#yosie_action(str(args[1]))
