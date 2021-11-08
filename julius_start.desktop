@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=lxterminal -e /home/pi/grammar/julius-g.sh
+Type=Application
+Name=julius_start
+Terminal=true
+
