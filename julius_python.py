@@ -53,7 +53,7 @@ class Julius:
                     func = "3"
                 else:
                     func = "99"
-
+                os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                 scraping.yosie_action(func)
                 os.system('./jtalk.sh')
 
