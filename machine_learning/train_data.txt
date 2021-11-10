@@ -1,7 +1,7 @@
 __label__0  明日の天気 は ？ 
 __label__0  今日の天気 は 
 __label__0  傘 いる 
-__label__0  今日は傘 いる 
+__label__0  今日は傘いる 
 __label__0  何時 から 雨 降る 
 __label__0  何時 から 晴れる 
 __label__0  何時 から 曇る 
@@ -23,15 +23,15 @@ __label__0  傘 は 本当 に いる の
 __label__0  長靴 は い た ほう が いい
 __label__0  今日 は 晴れる 
 __label__1  最新 情報 ある 
-__label__1  面白く ない ニュース 頂戴 
-__label__1  面白い ニュース くれ 
+__label__1  面白くない ニュース頂戴 
+__label__1  面白いニュースくれ 
 __label__1  なん で も いい から 聞か せ て くれ
-__label__1  今日 の ニュース は 
+__label__1  今日のニュースは 
 __label__1  ニュース 聞か せ て 
-__label__1  なん か 面白い 記事 ない 
-__label__1  なん か 聞か せ て
-__label__1  読ん で 
-__label__1  読ん で くれ 
+__label__1  なんか面白い 記事 ない 
+__label__1  なんか聞か せ て
+__label__1  読んで 
+__label__1  読んでくれ 
 __label__1  情報 
 __label__1  速報 
 __label__1  号外 
@@ -49,26 +49,26 @@ __label__1  今日のBIG な 記事
 __label__1  今日 の BIG な ニュース 
 __label__1  今日 の BIG な ニュース を 早く 読ん で 
 __label__1  新情報  
-__label__1  ニュース 読ん で 
+__label__1  ニュース読ん で 
 __label__1  政治 的 な の を 頂戴 
-__label__2  今日 は 何 日 
-__label__2  日付 を 確認 し たい 
+__label__2  今日は何 日 
+__label__2  日付を確認 し たい 
 __label__2  今日 は 何 の 日 
-__label__2  今 何 月 
+__label__2  今何月 
 __label__2  今 の 時間 は 
 __label__2  日時 の 確認 を し て くれ 
 __label__2  今 の 時間 は 
-__label__2  今 何時 何 分 
-__label__2  今 何時 
-__label__2  今 何分 
-__label__2  何 時 
+__label__2  今何時何 分 
+__label__2  今何時 
+__label__2  今何分 
+__label__2  何時 
 __label__2  時刻 
 __label__2  何時今 
-__label__2  今 の 時間 は 
-__label__2  時間 、 何 分 、 何時 
-__label__2  今 の 時間 
+__label__2  今の時間は 
+__label__2  時間 何 分 何時 
+__label__2  今の時間 
 __label__2  時間 
-__label__2  日付 、 日時 、 今 何 日 
+__label__2  日付日時今何 日 
 __label__2  何 分 
 __label__2  今何日 
 __label__2  今いつ 
@@ -124,21 +124,21 @@ __label__2  出発時刻
 __label__2  短期 
 __label__2  季節 
 __label__2  年 
-__label__2  タイム リミット 
+__label__2  タイムリミット 
 __label__2  近年 
 __label__2  シーズン 
-__label__2  勉強 時間 
+__label__2  勉強時間 
 __label__2  先日 
 __label__0  空 
-__label__0  天気 が 怪しい 
+__label__0  天気が怪しい 
 __label__0  雨空 
 __label__0  高 気圧 
 __label__0  一 点 の 雲 も ない 
 __label__0  霧 が 晴れる 
 __label__0  断雲 
-__label__0  直射 日光 
-__label__0  大気 現象 
-__label__0  晴れ晴れ し て いる 
+__label__0  直射日光 
+__label__0  大気現象 
+__label__0  晴れ晴れしている 
 __label__0  日本 晴れ 
 __label__0  大気 の 状態 
 __label__0  ウエザー 
@@ -288,3 +288,42 @@ __label__2  長夜
 __label__2  時間 が 経過 する 
 __label__2  プライベート 時間 
 __label__2  万国 標準 時 
+__label__0  今日の天気予報と落雷の危険性と雪が降る確率を教え て
+__label__0  天気予報 
+__label__0  今日の最高気温 
+__label__0  今日の天気は？ 
+__label__2  今日は何の日 ？ 
+__label__2  今日の日付を教え て くれる 
+__label__3  今日の占い 
+__label__3  今日の運勢 は 
+__label__3  今日の順位 は 
+__label__0  今日は雨 降る 
+__label__0  好天 
+__label__0  断雲 
+__label__0  夕靄 
+__label__0  たな曇り 
+__label__0  ウェザー 
+__label__3  今日の1位 
+__label__3  2位 
+__label__3  3位 
+__label__1  ニュースを教え て 
+__label__1  朝一番のニュースを読んで 
+__label__1  リーク情報 
+__label__1  ワイドニュース 
+__label__1  消息 
+__label__0  今の天気を教えて 
+__label__1  報道 
+__label__0  今日の天候について 
+__label__3  私の今日の運勢は 
+__label__3  星座 占い 
+__label__3  表情から感情をうかがい知る 
+__label__3  命運 
+__label__3  天命を待つ 
+__label__3  衰運に見舞わ れる 
+__label__0  台風一過 
+__label__3  ホロスコープ 
+__label__3  生命線 
+__label__2  夜分
+__label__2  時間の経過 
+__label__2  週を重ねる 
+__label__2  インターバル 
