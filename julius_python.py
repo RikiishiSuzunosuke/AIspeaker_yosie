@@ -5,7 +5,7 @@ import os
 
 HOST = '127.0.0.1'   # juliusサーバーのIPアドレス
 PORT = 10500         # juliusサーバーの待ち受けポート
-DATESIZE = 1024     # 受信データバイト数
+DATASIZE = 1024     # 受信データバイト数
 
 class Julius:
 
@@ -24,10 +24,9 @@ class Julius:
         func = "" #出力内容
 
         while True:
-
-
+        	
             # juliusサーバからデータ受信
-            data = self.sock.recv(DATESIZE).decode('utf-8')
+            data = self.sock.recv(DATASIZE).decode('utf-8')
 
             for line in data.split('\n'):
                 # 受信データから、<WORD>の後に書かれている言葉を抽出して変数に格納する。
@@ -60,7 +59,6 @@ class Julius:
                 fin_flag = False
                 strTemp = ""
                 func = ""
-
 
 if __name__ == "__main__":
     julius = Julius()
