@@ -1,6 +1,7 @@
 #!/bin/bash
 cd ~/AIspeaker_yosie
-./jtalk-start.sh 起動
+sleep 6
+./jtalk-start.sh うぇいくあっぷ
 python3 julius_python.py
 # while :
 # do
