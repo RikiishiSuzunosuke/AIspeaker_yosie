@@ -6,7 +6,7 @@ count_label = []
 weather, news, date, fortune = 0, 0, 0, 0
 func_list = [weather, news, date, fortune]
 #トレーニングデータを書き込むファイルをopen
-f = open('train_data.txt', 'a')
+f = open('train_data_R.txt', 'a')
 while True:
 	try:
 		print('天気0：ニュース1：日時2：占い3：終了999')
