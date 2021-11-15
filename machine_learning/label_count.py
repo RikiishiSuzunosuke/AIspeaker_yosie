@@ -1,5 +1,5 @@
 label=[]
-f = open("train_data.txt", 'r')
+f = open("train_data2.txt", 'r')
 for line in f:
 	label.append(line[9])
 f.close()
