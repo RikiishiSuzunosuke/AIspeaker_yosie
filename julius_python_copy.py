@@ -13,6 +13,11 @@ class Julius:
         self.sock = None
         #self.sock = None
 
+    def text_change(self, text):
+        text = text.replace('[s]', '')
+        text = text.replace('[/s]', '')
+        return text
+
     def run(self):
         # socket通信でjuliusサーバーに接続
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -41,19 +46,21 @@ class Julius:
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
-                if '天気' in strTemp:
-                    func = "0"
-                elif 'ニュース' in strTemp:
-                    func = "1"
-                elif '日時' in strTemp:
-                    func = "2"
-                elif '占い' in strTemp:
-                    func = "3"
-                else:
-                    func = "99"
-                os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
-                scraping.yosie_action(func)
-                os.system('./jtalk.sh')
+                strTemp2 = julius.text_change(strTemp)
+                print(strTemp2)
+                # if '天気' in strTemp:
+                #     func = "0"
+                # elif 'ニュース' in strTemp:
+                #     func = "1"
+                # elif '日時' in strTemp:
+                #     func = "2"
+                # elif '占い' in strTemp:
+                #     func = "3"
+                # else:
+                #     func = "99"
+                # os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                # scraping.yosie_action(func)
+                # os.system('./jtalk.sh')
 
                 fin_flag = False
                 strTemp = ""
