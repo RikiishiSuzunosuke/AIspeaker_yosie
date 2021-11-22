@@ -1,7 +1,9 @@
 import socket
 import time
-import scraping
+import sc_Days
+import news_get
 import os
+import random
 
 HOST = '127.0.0.1'   # juliusサーバーのIPアドレス
 PORT = 10500         # juliusサーバーの待ち受けポート
@@ -48,18 +50,23 @@ class Julius:
             if fin_flag == True:
                 strTemp = julius.text_change(strTemp) # [s],[/s]を削除
                 if '天気' in strTemp:
-                    func = "0"
+                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-weather.sh')
+
                 elif 'ニュース' in strTemp:
-                    func = "1"
+                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    news_get.news_get()
+                    os.system('./jtalk-news.sh')
+
                 elif '日時' in strTemp:
-                    func = "2"
+                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    sc_Days.get_days()
+                    os.system('./jtalk-days.sh')
                 elif '占い' in strTemp:
-                    func = "3"
+                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-fortune.sh')
                 else:
                     func = "99"
-                os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
-                scraping.yosie_action(func)
-                os.system('./jtalk.sh')
 
                 fin_flag = False
                 strTemp = ""
