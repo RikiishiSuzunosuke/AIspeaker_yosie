@@ -13,10 +13,10 @@ soup = BeautifulSoup(rest.text, "html.parser")
 data_list = soup.find_all(href=re.compile("news.yahoo.co.jp/pickup"))
 #URLのみを再度抽出してリストに格納
 headline_link_list = [data.attrs["href"] for data in data_list]
-
+size = len(headline_link_list)
 f = open('news.txt', 'w')
 
-for i in range(8):
+for i in range(size):
 	headline_link = headline_link_list[i]
 
 	#取得したURLのページを解析

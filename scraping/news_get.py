@@ -6,6 +6,6 @@ def news_get():
 	news = news_list[random.randrange(8)]
 	f.close()
 
-	f = open('newa_read.txt', 'w')
+	f = open('news_read.txt', 'w')
 	f.write(news)
 	f.close()
