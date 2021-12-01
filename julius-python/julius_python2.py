@@ -44,7 +44,8 @@ class Julius:
 
                 # 受信データに</RECOGOUT>'があれば、話終わり ⇒ フラグをTrue
                 if '</RECOGOUT>' in line:
-                    fin_flag = True
+                    if 'ねぇよしえ' in strTemp:
+                    	fin_flag = True
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
