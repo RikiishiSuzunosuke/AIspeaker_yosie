@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=lxterminal -e /home/pi/grammar/julius-g.sh
+Exec=lxterminal -e /home/pi/grammar/julius-g-test.sh
 Type=Application
 Name=julius_start
 Terminal=true
