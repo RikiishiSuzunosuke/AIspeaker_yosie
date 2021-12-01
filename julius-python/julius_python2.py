@@ -46,16 +46,14 @@ class Julius:
                 # 受信データに</RECOGOUT>'があれば、話終わり ⇒ フラグをTrue
                 if '</RECOGOUT>' in line:
                     if 'ねぇよしえ' in strTemp:
-                    	fin_flag = True
-                    	strTemp = strTemp[5:]
-                    	print(strTemp)
+                        fin_flag = True
+                        strTemp = julius.text_change(strTemp) # [s],[/s]を削除
+                        strTemp = strTemp[5:] # ねぇよしえを削除
+                        print(strTemp)
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
-
-            	pre_label = predict.predict(strTemp)
-
-                strTemp = julius.text_change(strTemp) # [s],[/s]を削除
+                pre_label = predict.predict(strTemp)
                 if pre_label == '0':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     os.system('./jtalk-weather.sh')
