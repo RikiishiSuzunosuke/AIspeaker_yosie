@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=lxterminal -e /home/pi/AIspeaker_yosie/yosie.sh
+Exec=lxterminal -e /home/pi/AIspeaker_yosie/yosie3.sh
 Type=Application
 Name=yosie_start
 Terminal=true
