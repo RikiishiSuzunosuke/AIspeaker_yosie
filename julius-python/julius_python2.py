@@ -4,6 +4,7 @@ import sc_Days
 import news_get
 import os
 import random
+import predict
 
 HOST = '127.0.0.1'   # juliusサーバーのIPアドレス
 PORT = 10500         # juliusサーバーの待ち受けポート
@@ -46,29 +47,32 @@ class Julius:
                 if '</RECOGOUT>' in line:
                     if 'ねぇよしえ' in strTemp:
                     	fin_flag = True
+                    	strTemp = strTemp[5:]
+                    	print(strTemp)
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
+
+            	pre_label = predict.predict(strTemp)
+
                 strTemp = julius.text_change(strTemp) # [s],[/s]を削除
-                if '天気' in strTemp:
+                if pre_label == '0':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     os.system('./jtalk-weather.sh')
 
-                elif 'ニュース' in strTemp:
+                elif pre_label == '1':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     news_get.news_get()
                     os.system('./jtalk-news.sh')
 
-                elif '日時' in strTemp:
+                elif pre_label == '2':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     sc_Days.get_days()
                     os.system('./jtalk-days.sh')
-                elif '占い' in strTemp:
+                elif pre_label == '3':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     os.system('./jtalk-fortune.sh')
-                else:
-                    func = "99"
-
+                
                 fin_flag = False
                 strTemp = ""
                 func = ""
