@@ -8,7 +8,7 @@ model = ft.train_supervised('train_data2.txt', label_prefix = '__label__',  dim 
 model.save_model('model.bin')
 #model.binを生成
 
-print(model.predict('今日の占いの結果'))
+print(model.predict('今日の天気'))
 
 results = model.test('train_data.txt')
 print(results)
