@@ -48,27 +48,30 @@ class Julius:
                         fin_flag = True
                         strTemp = julius.text_change(strTemp) # [s],[/s]を削除
                         strTemp = strTemp[5:] # ねぇよしえを削除
+                    else:
+                        strTemp = ""
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
+                print(strTemp)
                 if '天気' in strTemp:
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 天気予報をお伝えします')
                     os.system('./jtalk-weather.sh')
 
                 elif 'ニュース' in strTemp:
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 本日のニュースを読み上げます')
                     news_get.news_get()
                     os.system('./jtalk-news.sh')
 
                 elif '日時' in strTemp:
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 現在の日時をお伝えします')
                     sc_Days.get_days()
                     os.system('./jtalk-days.sh')
                 elif '占い' in strTemp:
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 本日の星座占いを読み上げます')
                     os.system('./jtalk-fortune.sh')
                 else:
-                	pass
+                    pass
                 fin_flag = False
                 strTemp = ""
                 func = ""
