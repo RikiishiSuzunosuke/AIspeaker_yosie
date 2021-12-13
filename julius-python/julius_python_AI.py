@@ -49,10 +49,12 @@ class Julius:
                         fin_flag = True
                         strTemp = julius.text_change(strTemp) # [s],[/s]を削除
                         strTemp = strTemp[5:] # ねぇよしえを削除
-                        print(strTemp)
+                    else:
+                        strTemp = ""
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
+                print(strTemp)
                 pre_label = predict.predict(strTemp)
                 if pre_label == '0':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
@@ -70,7 +72,8 @@ class Julius:
                 elif pre_label == '3':
                     os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
                     os.system('./jtalk-fortune.sh')
-                
+                else:
+                    pass
                 fin_flag = False
                 strTemp = ""
                 func = ""

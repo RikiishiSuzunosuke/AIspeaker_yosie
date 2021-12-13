@@ -61,9 +61,9 @@ class Julius:
                 scraping.yosie_action(func)
                 os.system('./jtalk.sh')
 
-                fin_flag = False
-                strTemp = ""
-                func = ""
+            fin_flag = False
+            strTemp = ""
+            func = ""
 
 if __name__ == "__main__":
     julius = Julius()
