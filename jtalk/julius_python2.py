@@ -54,6 +54,7 @@ class Julius:
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
+                os.system('./muute_on.sh')
                 print(strTemp)
                 if '天気' in strTemp:
                     os.system('./jtalk-start.sh 天気予報をお伝えします')
@@ -84,6 +85,7 @@ class Julius:
                     pass
                 fin_flag = False
                 strTemp = ""
+                os.system('./muute_off.sh')
 
 if __name__ == "__main__":
     julius = Julius()
