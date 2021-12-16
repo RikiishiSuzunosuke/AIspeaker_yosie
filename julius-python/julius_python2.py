@@ -54,19 +54,20 @@ class Julius:
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
+                os.system('./muute_on.sh')
                 print(strTemp)
                 if '天気' in strTemp:
                     os.system('./jtalk-start.sh 天気予報をお伝えします')
-                    #os.system('./jtalk-weather.sh')
+                   #os.system('./jtalk-weather.sh')
                     os.system('./weather-p.sh')
-                    get_time.time_sleep("weather.wav")
+                   #get_time.time_sleep("weather.wav")
 
                 elif 'ニュース' in strTemp:
                     os.system('./jtalk-start.sh 本日のニュースを読み上げます')
                     news_get.news_get()
-                    #os.system('./jtalk-news.sh')
+                   #os.system('./jtalk-news.sh')
                     os.system('./news-p.sh')
-                    get_time.time_sleep("news.wav")
+                   #get_time.time_sleep("news.wav")
 
                 elif '日時' in strTemp:
                     os.system('./jtalk-start.sh 現在の日時をお伝えします')
@@ -76,14 +77,15 @@ class Julius:
 
                 elif '占い' in strTemp:
                     os.system('./jtalk-start.sh 本日の星座占いを読み上げます')
-                    #os.system('./jtalk-fortune.sh')
+                   #os.system('./jtalk-fortune.sh')
                     os.system('./fortune-p.sh')
-                    get_time.time_sleep("fortune.wav")
+                   #get_time.time_sleep("fortune.wav")
 
                 else:
                     pass
                 fin_flag = False
                 strTemp = ""
+                os.system('./muute_off.sh')
 
 if __name__ == "__main__":
     julius = Julius()
