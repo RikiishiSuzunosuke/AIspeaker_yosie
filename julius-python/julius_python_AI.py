@@ -31,7 +31,7 @@ class Julius:
         func = "" #出力内容
 
         while True:
-        	
+
             # juliusサーバからデータ受信
             data = self.sock.recv(DATASIZE).decode('utf-8')
 
@@ -54,29 +54,33 @@ class Julius:
 
             # 話した言葉毎に、print文を実行
             if fin_flag == True:
-                print(strTemp)
+                os.system('./muute_on.sh')
+                print(strTemp) #のちに消す
                 pre_label = predict.predict(strTemp)
                 if pre_label == '0':
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
-                    os.system('./jtalk-weather.sh')
+                    os.system('./jtalk-start.sh 天気予報をお伝えします')
+                    os.system('./weather-p.sh')
 
                 elif pre_label == '1':
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 本日のニュースを読み上げます')
                     news_get.news_get()
-                    os.system('./jtalk-news.sh')
+                    os.system('./news-p.sh')
 
                 elif pre_label == '2':
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
+                    os.system('./jtalk-start.sh 現在の日時をお伝えします')
                     sc_Days.get_days()
                     os.system('./jtalk-days.sh')
+
                 elif pre_label == '3':
-                    os.system('./jtalk-start.sh 処理中です、しばらくお待ちください')
-                    os.system('./jtalk-fortune.sh')
+                    os.system('./jtalk-start.sh 本日の星座占いを読み上げます')
+                    os.system('./fortune-p.sh')
+
                 else:
                     pass
+                    
                 fin_flag = False
                 strTemp = ""
-                func = ""
+                os.system('./muute_off.sh')
 
 if __name__ == "__main__":
     julius = Julius()

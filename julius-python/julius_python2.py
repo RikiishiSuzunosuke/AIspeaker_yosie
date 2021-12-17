@@ -64,16 +64,16 @@ class Julius:
 
                 elif 'ニュース' in strTemp:
                     os.system('./jtalk-start.sh 本日のニュースを読み上げます')
-                    news_get.news_get()
+                    num = random.randrange(8)
                    #os.system('./jtalk-news.sh')
-                    os.system('./news-p.sh')
+                    os.system('./news-p-'+ str(num) + '.sh')
                    #get_time.time_sleep("news.wav")
 
                 elif '日時' in strTemp:
                     os.system('./jtalk-start.sh 現在の日時をお伝えします')
                     sc_Days.get_days()
                     os.system('./jtalk-days.sh')
-                    get_time.time_sleep("open_jtalk.wav")
+                  #get_time.time_sleep("open_jtalk.wav")
 
                 elif '占い' in strTemp:
                     os.system('./jtalk-start.sh 本日の星座占いを読み上げます')

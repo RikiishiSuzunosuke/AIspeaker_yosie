@@ -13,4 +13,4 @@ python3 news_get.py
 ./muute_off.sh
 
 ./jtalk-start.sh 起動しました。ご用件をお申し付けください。
-python3 julius_python2.py
+python3 julius_python_AI.py
