@@ -1,11 +1,12 @@
-import random
-
 def news_get():
 	f = open('news.txt', 'r')
 	news_list = f.readlines()
-	news = news_list[random.randrange(8)]
+
+	for i in range(8):
+		news = news_list[i]
+		f2 = open('news_' + str(i) + '.txt', 'w')
+		f2.write(news)
+		f2.close()
 	f.close()
 
-	f = open('news_read.txt', 'w')
-	f.write(news)
-	f.close()
+news_get()
