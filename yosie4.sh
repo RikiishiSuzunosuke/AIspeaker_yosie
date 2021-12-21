@@ -8,7 +8,6 @@ python3 sc_FT.py
 python3 sc_Weather.py
 ./weather-m.sh
 python3 sc_News.py
-python3 news_get.py
 ./news_make.sh
 ./muute_off.sh
 
