@@ -1,7 +1,6 @@
 import socket
 import time
 import sc_Days
-import news_get
 import get_time
 import os
 import random
