@@ -8,7 +8,7 @@ model = ft.train_supervised('train_J_nw.txt', label_prefix = '__label__',  dim =
 model.save_model('model.bin')
 #model.binを生成
 
-print(model.predict('おとめ座の運勢'))
+print(model.predict('今日は何曜日'))
 
 results = model.test('train_data.txt')
 print(results)
