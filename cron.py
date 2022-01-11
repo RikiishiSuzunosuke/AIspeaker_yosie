@@ -21,5 +21,6 @@ def cron():
 			#天気予報は2時、5時、8時、11時、14時、15時、17時、20時に発表
 			if hour in [2,5,8,11,14,15,17,20]:
 				sc_Weather　#天気予報をスクレイピング
+				os.system('./weather-m.sh')
 				print("weather ok")
 cron()
