@@ -1,10 +1,10 @@
 % TENKOU
 	晴れ	h a r e
 	雨	a m e
-	風	k a z e
 	曇り	k u m o r i
 % TENKI
 	天気	t e N k i
+	tenkiyohou
 % KANA
 	かな	k a n a
 % KYOU
@@ -39,7 +39,7 @@
 % NEWS
 	ニュース        ny u: s u
 % YONDE
-読んで  y o N d e
+	読んで  y o N d e
 	聞かせて        k i k a s e t e
 % NANKA
 	なんか  n a N k a
