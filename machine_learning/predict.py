@@ -23,8 +23,9 @@ def predict(text):
 	result = model.predict(text)
 	re = str(result[0])
 	index11 = re[11]
-	return index11
 	print(index11)
+	return index11
+
 
 text = input("input:")
 predict(text)
