@@ -6,7 +6,6 @@ def predict(text):
 	node = tagger.parseToNode(text)
 
 	present = ""
-
 	while node:
 	    if node.surface != "":  # ヘッダとフッタを除外
 	    	#ここを替えると、好きな品詞を抽出可能
