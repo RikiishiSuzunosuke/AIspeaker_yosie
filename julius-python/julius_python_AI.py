@@ -3,7 +3,7 @@ import time
 import sc_Days
 import os
 import random
-import predict
+import predict_yosie
 
 HOST = '127.0.0.1'   # juliusサーバーのIPアドレス
 PORT = 10500         # juliusサーバーの待ち受けポート
@@ -55,7 +55,7 @@ class Julius:
             if fin_flag == True:
                 os.system('./muute_on.sh')
                 print(strTemp) #のちに消す
-                pre_label = predict.predict(strTemp)
+                pre_label = predict_yosie.predict(strTemp)
                 if pre_label == '0':
                     os.system('./jtalk-start.sh 天気予報をお伝えします')
                     os.system('./weather-p.sh')
