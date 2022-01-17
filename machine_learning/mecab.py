@@ -1,13 +1,13 @@
 import MeCab
 
-tagger = MeCab.Tagger("-Owakati")
+tagger = MeCab.Tagger("-Ochasen")
 while True:
 	str = input("input:")
 	node = tagger.parseToNode(str)
 
 	#形態素解析を実行して表示
-	# mecab = tagger.parse(str)
-	# print(mecab)
+	mecab = tagger.parse(str)
+	print(mecab)
 
 	present = ""
 	#名詞　一般の単語のみを抽出して表示
