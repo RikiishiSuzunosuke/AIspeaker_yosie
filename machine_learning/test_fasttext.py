@@ -8,7 +8,7 @@ model = ft.train_supervised('Jonny.txt', label_prefix = '__label__',  dim = 200,
 model.save_model('Jonny_model.bin')
 #model.binを生成
 
-print(model.predict('時'))
+print(model.predict('射手 座'))
 
 #results = model.test('train_data.txt')
 #print(results)
