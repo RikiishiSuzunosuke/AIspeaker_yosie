@@ -2,8 +2,10 @@ import fasttext as ft
 import MeCab
 
 def predict(text):
-	tagger = MeCab.Tagger("-Owakati")
+	tagger = MeCab.Tagger("-Ochasen")
 	node = tagger.parseToNode(text)
+
+	mecab = tagger.parse(text)
 
 	present = ""
 	while node:
