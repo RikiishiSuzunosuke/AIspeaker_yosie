@@ -16,8 +16,11 @@ def predict(text):
 	        elif (node.feature.split(",")[0] == "名詞") and (node.feature.split(",")[1] == "接尾"):
 	            present = present + node.feature.split(",")[6] + " "
 	        elif "時間" in text:
-	        	present = present + "時間 "
-	        	text = text.replace("時間","")
+	            present = present + "時間 "
+	            text = text.replace("時間","")
+	    elif "曇り" in text:
+	        present = present + "曇り"
+	        text = text.replace("曇り","")
 	    node = node.next
 	print(present)
 
