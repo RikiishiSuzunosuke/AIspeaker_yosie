@@ -19,7 +19,7 @@ def predict(text):
 	            present = present + "時間 "
 	            text = text.replace("時間","")
 	    elif "曇り" in text:
-	        present = present + "曇り"
+	        present = present + "曇り "
 	        text = text.replace("曇り","")
 	    node = node.next
 	print(present)
